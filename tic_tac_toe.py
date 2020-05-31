@@ -176,4 +176,4 @@ def start_game():
 
 
 # uncomment the line below and run this script to play game
-start_game()
+# start_game()
