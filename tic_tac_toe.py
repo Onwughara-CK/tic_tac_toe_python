@@ -158,6 +158,7 @@ def end_game():
 
 
 def reset_game():
+    global board
     board = {1: '1', 2: '2', 3: '3', 4: '4',
              5: '5', 6: '6', 7: '7', 8: '8', 9: '9'}
     clear_output()
@@ -175,4 +176,4 @@ def start_game():
 
 
 # uncomment the line below and run this script to play game
-# start_game()
+start_game()
