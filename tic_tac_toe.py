@@ -102,8 +102,7 @@ def position():
   # else :  pass
 
 
-def win(turn):
-    global board, players
+def win(whose_turn):
     move = True
     if board[1] == board[2] == board[3] or \
        board[4] == board[5] == board[6] or \
@@ -114,7 +113,7 @@ def win(turn):
        board[1] == board[5] == board[9] or \
        board[3] == board[5] == board[7]:
         print_board()
-        print(f'player_{turn} is the winner !!!!')
+        print(f'player_{whose_turn} is the winner !!!!')
         while move:
             choice = input('do you want to play again? [y/n]:')
             if choice.lower() in ('y', 'n'):
@@ -159,7 +158,6 @@ def end_game():
 
 
 def reset_game():
-    global board
     board = {1: '1', 2: '2', 3: '3', 4: '4',
              5: '5', 6: '6', 7: '7', 8: '8', 9: '9'}
     clear_output()
