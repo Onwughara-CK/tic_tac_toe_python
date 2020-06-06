@@ -175,5 +175,7 @@ def start_game():
     position()
 
 
-# uncomment the line below and run this script to play game
-# start_game()
+
+
+if __name__ == '__main__':
+    start_game()
